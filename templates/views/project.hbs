@@ -1,0 +1,115 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <article>
+        <p><a href="/projects">&larr; Back to projects</a></p>
+        <hr>
+        <header>
+          <h1>{{data.project.code}}</h1>
+        </header>
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <strong>
+                  Minimum Price:
+                </strong>
+                {{data.project.minPrice}}
+              </li>
+              <li class="list-group-item">
+                <strong>
+                  Maximum Price:
+                </strong>
+                {{data.project.maxPrice}}
+              </li>
+              <li class="list-group-item">
+                <strong>
+                  Minimum Area:
+                </strong>
+                {{data.project.minArea}}
+              </li>
+              <li class="list-group-item">
+                <strong>
+                  Maximum Area:
+                </strong>
+                {{data.project.maxArea}}
+              </li>
+              <li class="list-group-item">
+                <strong>
+                  Location:
+                </strong>
+                {{data.project.locationEn}}
+              </li>
+
+              <li class="list-group-item">
+                <strong>
+                  Type:
+                </strong>
+                {{data.project.type}}
+              </li>
+              <li class="list-group-item">
+                <strong>
+                  Delivery Date:
+                </strong>
+                {{data.project.deliveryDate}}
+              </li>
+              <li class="list-group-item">
+                <strong>
+                  Installments:
+                </strong>
+                {{data.project.installment}} month
+              </li>
+              <li class="list-group-item">
+                <strong>
+                  Down Payment:
+                </strong>
+                {{data.project.downPayment}} %
+              </li>
+            </ul>
+            <div class="well">
+              {{data.project.descriptionEn}}
+            </div>
+
+            <a class="btn btn-success btn-block" href="/contact">Ask About This Project</a>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            {{#if data.project.image1}}
+              <img src="{{cloudinaryUrl data.project.image1    crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image2}}
+              <img src="{{cloudinaryUrl data.project.image2   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image3}}
+              <img src="{{cloudinaryUrl data.project.image3   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image4}}
+              <img src="{{cloudinaryUrl data.project.image4   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image5}}
+              <img src="{{cloudinaryUrl data.project.image5   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image6}}
+              <img src="{{cloudinaryUrl data.project.image6   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image7}}
+              <img src="{{cloudinaryUrl data.project.image7   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image8}}
+              <img src="{{cloudinaryUrl data.project.image8   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image9}}
+              <img src="{{cloudinaryUrl data.project.image9   crop="fit"}}" class="img-responsive">
+            {{/if}}
+            {{#if data.project.image10}}
+              <img src="{{cloudinaryUrl data.project.image10   crop="fit"}}" class="img-responsive">
+            {{/if}}
+          </div>
+
+        </div>
+
+      </article>
+    </div>
+  <div>
+<div>

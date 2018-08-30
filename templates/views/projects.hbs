@@ -1,0 +1,17 @@
+<div>
+  <h1>Projects</h1>
+  <div class="row">
+    <div class="col-md-12 col-lg-12">
+      <div class="row">
+        {{#each projects}}
+          <div class="col-md-4 col-lg-4">
+            <h2><a href="{{projectUrl slug}}">{{{code}}}</a></h2>
+            {{#if image1}}
+              <img src="{{{cloudinaryUrl image1 width=160 height=160 crop="fit"}}}" class="thumbnail">
+            {{/if}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+<div>
